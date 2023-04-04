@@ -1,0 +1,28 @@
+.button {
+    background-color: teal;
+    color: white;
+}
+
+.tasks__button {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+}
+
+.tasks__button--toggleDone {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.tasks__button--remove {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background-color: white;
+}
+
+
+  

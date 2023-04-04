@@ -1,0 +1,29 @@
+.section__header {
+    margin: 1px 20px;
+
+}
+
+.section__formHeader {
+    margin: 1px 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.section__form {
+    margin: 1px 20px 10px 20px;
+    padding: 20px;
+    background-color: white;
+    
+}
+
+.section__tasksHeader {
+    margin: 1px 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.section__tasks {
+    margin: 1px 20px;
+    padding: 20px;
+    background-color: white;
+}

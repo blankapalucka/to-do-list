@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  background-color: rgb(193, 185, 185);
+  font-family: "Noto Sans", sans-serif;
+  overflow-wrap: anywhere;
+}
+
+
