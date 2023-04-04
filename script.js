@@ -8,32 +8,56 @@
         {
             content: "kupić żwirek",
             done: false,
-
         },
     ];
 
     const render = () => {
 
-        let htmlString= "";
+        let htmlString = "";
 
-        for(const task of tasks) {
+        for (const task of tasks) {
             htmlString += `
             
-            <li>
+            <li 
+            ${task.done ? "style=\"text-decoration: line-through\"" : ""}>
             ${task.content}
             </li>
             `;
-          };
-            document.querySelector(".js-tasks").innerHTML=htmlString;    
-          
+        };
+        document.querySelector(".js-tasks").innerHTML = htmlString;
+
 
     };
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent,
+        });
 
-    const intit = () => {
         render();
+    }
 
-    };
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    intit();
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+
+        if (newTaskContent === "") {
+            return;
+        }
+
+        addNewTask(newTaskContent);
+    }
+
+
+const intit = () => {
+    render();
+
+    const form = document.querySelector(".js-form");
+
+    form.addEventListener("submit", onFormSubmit);
+
+}
+
+intit();
 
 }
