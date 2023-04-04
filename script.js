@@ -1,5 +1,4 @@
 {
-
     const tasks = [
         {
             content: "umyć okna",
@@ -41,7 +40,6 @@
 
         });
 
-
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -72,11 +70,8 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-   bindEvents();
-
-
+        bindEvents();
     };
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
