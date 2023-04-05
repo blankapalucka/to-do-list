@@ -14,15 +14,4 @@ body {
 }
 
 
-.js-form {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-  gap:10px;
-}
 
-
-@media(max-width: 767px) {
-  .js__form {
-      grid-template-columns: 1fr;
-  }
-}
