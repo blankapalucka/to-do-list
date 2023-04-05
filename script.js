@@ -50,14 +50,18 @@
             htmlString += `
             
             <li class="list__item${task.done ? " list__item--done" : ""}">
-           <button class="js-done tasks__buton tasks__button--toggleDone">        
+          <span> 
+          <button class="js-done tasks__buton tasks__button--toggleDone">        
            ${task.done ? "✔" : ""}
          </button>
+         </span>
            
             ${task.content}
-            <button class="js-remove"> <img class="tasks__button--remove" src="images/bin.png"/> </button>
+            <button class="js-remove tasks__button--remove"> 🗑️</button>
             </li>
             `;
+
+
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -69,16 +73,16 @@
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent= newTaskElement.value.trim();
+        const newTaskContent = newTaskElement.value.trim();
 
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
-            newTaskElement.value="";
+            newTaskElement.value = "";
 
             newTaskElement.focus();
-           
+
         }
-     
+
 
     }
 
