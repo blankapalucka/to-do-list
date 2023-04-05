@@ -1,8 +1,8 @@
-.container{
+.container {
     max-width: 1000px;
     padding: 10px;
     margin: 0 auto;
-  }
+}
 
 
 .section__header {
@@ -17,11 +17,21 @@
 }
 
 .section__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
     margin: 1px 20px 10px 20px;
     padding: 20px;
     background-color: white;
-    
+
 }
+
+@media(max-width: 767px) {
+  .section__form {
+      grid-template-columns: 1fr;
+  }
+}
+
 
 
 .section__tasksHeader {
