@@ -5,8 +5,12 @@
     transition: 0.3s;
 }
 
-.buttons__button:active {
-    color: rgb(51, 195, 195);
+.button:focus {
+   background-color:rgb(122, 218, 218);
+}
+
+.button:hover {
+  background-color:rgb(133, 219, 219);
 }
 
 .tasks__button {
