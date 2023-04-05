@@ -1,12 +1,21 @@
 .button {
     background-color: teal;
     color: white;
+    border: none;
+    transition: 0.3s;
 }
 
+/* @media (max-width: 767px) {
+    .button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+} */
 .tasks__button {
     background-color: green;
     width: 30px;
     height: 30px;
+    text-decoration: none;
 }
 
 .tasks__button--toggleDone {
@@ -20,9 +29,14 @@
     margin-left: auto;
     width: 30px;
     height: 30px;
-    border: 0;
+    border: none;
     background-color: white;
 }
 
-
-  
+.js-remove {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+}

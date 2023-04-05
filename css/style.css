@@ -7,10 +7,22 @@ html {
 }
 
 body {
-  margin: auto;
-  background-color: rgb(193, 185, 185);
+   margin: auto;
+  background-color: rgb(217, 209, 209);
   font-family: "Noto Sans", sans-serif;
   overflow-wrap: anywhere;
 }
 
 
+.js-form {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap:10px;
+}
+
+
+@media(max-width: 767px) {
+  .js__form {
+      grid-template-columns: 1fr;
+  }
+}
