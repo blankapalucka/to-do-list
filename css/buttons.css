@@ -5,12 +5,10 @@
     transition: 0.3s;
 }
 
-/* @media (max-width: 767px) {
-    .button {
-        flex-basis: 100%;
-        margin: 10px;
-    }
-} */
+.buttons__button:active {
+    color: rgb(51, 195, 195);
+}
+
 .tasks__button {
     background-color: green;
     width: 30px;
