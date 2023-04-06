@@ -7,11 +7,11 @@
 }
 
 .button:focus {
-   background-color:rgb(59, 212, 212);
+    background-color: rgb(59, 212, 212);
 }
 
 .button:hover {
-  background-color:rgb(59, 212, 212);
+    background-color: rgb(59, 212, 212);
 }
 
 .tasks__button {
@@ -36,10 +36,9 @@
     background-color: red;
 }
 
-
 .js-remove {
     margin-left: auto;
     width: 30px;
     height: 30px;
     border: none;
-    }
+}
