@@ -45,3 +45,7 @@
     padding: 20px;
     background-color: white;
 }
+
+.section__input{
+    min-height: 40px;
+}
