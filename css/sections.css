@@ -4,7 +4,6 @@
     margin: 0 auto;
 }
 
-
 .section__header {
     margin: 1px 20px;
 
@@ -27,12 +26,10 @@
 }
 
 @media(max-width: 767px) {
-  .section__form {
-      grid-template-columns: 1fr;
-  }
+    .section__form {
+        grid-template-columns: 1fr;
+    }
 }
-
-
 
 .section__tasksHeader {
     margin: 1px 20px;
@@ -46,6 +43,6 @@
     background-color: white;
 }
 
-.section__input{
+.section__input {
     min-height: 40px;
 }
