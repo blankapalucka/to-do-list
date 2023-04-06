@@ -13,5 +13,7 @@ body {
   overflow-wrap: anywhere;
 }
 
-
+ul {
+  padding-left: 0px;
+}
 
