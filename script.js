@@ -49,15 +49,14 @@
         for (const task of tasks) {
             htmlString += `
             
-            <li class="list__item${task.done ? " list__item--done" : ""}">
-          <span> 
-          <button class="js-done tasks__buton tasks__button--toggleDone">        
-           ${task.done ? "✔" : ""}
-         </button>
-         </span>
-           
-            ${task.content}
-            <button class="js-remove tasks__button--remove"> 🗑️</button>
+            <li class="list__item">
+            <button class="js-done tasks__buton tasks__button--toggleDone">        
+                ${task.done ? "✔" : ""}
+            </button>
+            <span class="${task.done ? " list__item--done" : ""}">
+                ${task.content}
+            </span>
+            <button class="js-remove tasks__button--remove">🗑️</button>
             </li>
             `;
 
@@ -78,12 +77,8 @@
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskElement.value = "";
-
-            newTaskElement.focus();
-
         }
-
-
+        newTaskElement.focus();
     }
 
     const intit = () => {
