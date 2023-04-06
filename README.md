@@ -1,8 +1,11 @@
 # To do list
 ## https://blankapalucka.github.io/to-do-list/
 
+ ![screen](./images/screen.gif)
+ 
 ### Description
 
+A simple to-do list where you can add new tasks, mark tasks done and delete added tasks.
 ### Features
 1. HTML
 2. CSS
