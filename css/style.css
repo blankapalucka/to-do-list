@@ -12,12 +12,3 @@ body {
   font-family: "Noto Sans", sans-serif;
   overflow-wrap: anywhere;
 }
-
-h2 {
-  font-size: 20px;
-  margin: 0px;
-}
-
-ul {
-  padding-left: 0px;
-}

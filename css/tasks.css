@@ -1,18 +1,23 @@
-.button {
-    background-color: teal;
-    color: white;
-    border: none;
-    transition: 0.3s;
-    min-height: 40px;
+.tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.button:focus {
-    background-color: rgb(59, 212, 212);
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
 }
 
-.button:hover {
-    background-color: rgb(59, 212, 212);
+.tasks__content--done {
+    text-decoration: line-through;
 }
+
 
 .tasks__button {
     background-color: green;
