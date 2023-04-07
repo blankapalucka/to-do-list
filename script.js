@@ -38,7 +38,7 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-                <li class="tasks__item">
+            <li class="tasks__item">
                 <button class="js-done tasks__buton tasks__button--toggleDone">        
                     ${task.done ? "✔" : ""}
                 </button>
@@ -46,7 +46,7 @@
                     ${task.content}
                 </span>
                 <button class="js-remove tasks__button--remove">🗑️</button>
-                </li>
+            </li>
             `;
         };
         document.querySelector(".js-tasks").innerHTML = htmlString;
