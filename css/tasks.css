@@ -40,3 +40,7 @@
     border: none;
     background-color: red;
 }
+
+.tasks__item--hidden{
+    display: none;
+}
