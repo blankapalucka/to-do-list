@@ -75,7 +75,7 @@
 
         const hideDoneTasksButton = document.querySelector(".js-hideDoneTasks");
         hideDoneTasksButton.addEventListener("click", () => {
-            hideDoneTasks = true;
+            hideDoneTasks = !hideDoneTasks;
             render();
         });
     };
@@ -86,7 +86,7 @@
         renderButtons();
 
         bindEvents();
-        bindButtonsEvents();
+        // bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
