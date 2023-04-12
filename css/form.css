@@ -20,6 +20,7 @@
     background-color: teal;
     color: white;
     border: none;
+    transition: 0.3s;
 }
 
 .form__button:focus {
@@ -28,4 +29,5 @@
 
 .form__button:hover {
     background-color: rgb(59, 212, 212);
+    transform: scale(1.1);
 }
