@@ -46,12 +46,6 @@
         render();
     };
 
-
-    //     // tasks = tasks.map
-    //     tasks[index].done = !tasks[index].done;
-    //     render();
-    // }
-
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
@@ -112,26 +106,15 @@
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
         if (markAllDoneButton) {
-            // markAllDoneButton.addEventListener("click", markAllDone);
             markAllDoneButton.addEventListener("click", markAllTasksDone);
         }
-
-        //     for (const task of tasks) {
-        //         task.done = true;
-        //     }
-        // render();
-        // });
 
         const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
 
         if (toggleHideDoneTasksButton) {
             toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
         }
-        //     hideDoneTasks = !hideDoneTasks;
-        // render();
-        // });
     };
-    // / powinien być tutaj event Listener i if/
 
     const render = () => {
         renderTasks();
