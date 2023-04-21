@@ -11,3 +11,4 @@ A simple to-do list where you can add new tasks, mark tasks done and delete adde
 2. CSS
 3. Javascript
 4. BEM naming convention
+5. using immutable functions and data structures
